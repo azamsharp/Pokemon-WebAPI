@@ -12,9 +12,9 @@ private func getAll() -> [Pokemon] {
         pokemons = [Pokemon]()
         
         let pokemon1 = Pokemon(id : 1, name: "Pikachu", imageURL: "http://vignette4.wikia.nocookie.net/pokemon/images/5/5f/025Pikachu_OS_anime_11.png")
-        let pokemon2 = Pokemon(id : 2, name: "Pokemon 2", imageURL: "SomeURL")
-        let pokemon3 = Pokemon(id : 3, name: "Pokemon 3", imageURL: "SomeURL")
-        let pokemon4 = Pokemon(id : 4,name: "Pokemon 4", imageURL: "SomeURL")
+        let pokemon2 = Pokemon(id : 2, name: "Bulbasaur", imageURL: "http://static.giantbomb.com/uploads/original/13/135472/1891758-001bulbasaur.png")
+        let pokemon3 = Pokemon(id : 3, name: "Ivysaur", imageURL: "http://static.giantbomb.com/uploads/scale_small/13/135472/1891759-002ivysaur.png")
+        let pokemon4 = Pokemon(id : 4,name: "Charmander", imageURL: "http://static.giantbomb.com/uploads/scale_small/0/6087/2438704-1202149925_t.png")
         
         pokemons.append(contentsOf: [pokemon1,pokemon2,pokemon3,pokemon4])
     }
