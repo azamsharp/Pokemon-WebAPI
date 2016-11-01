@@ -16,12 +16,22 @@ struct Pokemon : NodeRepresentable, ResponseRepresentable {
     var id :Int?
     var name :String
     var imageURL :String
+    var latitude :Double = 36.421412  // The Iron Yard Latitude
+    var longitude :Double = -116.419681 // The Iron Yard Longitude
+    
+    init(id :Int?, name: String, imageURL :String) {
+        self.id = id
+        self.name = name
+        self.imageURL = imageURL
+    }
     
     func makeNode(context: Context) throws -> Node {
         return try Node(node: [
             "name":self.name,
             "imageURL":self.imageURL,
-            "id":self.id
+            "id":self.id,
+            "latitude":self.latitude,
+            "longitude":self.longitude
             
             ], in: context)
     }
