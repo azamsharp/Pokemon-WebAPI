@@ -68,6 +68,12 @@ private func getAll() -> [Pokemon] {
         pokemon11.longitude = -95.393128
         
         pokemons.append(contentsOf: [pokemon1,pokemon2,pokemon3,pokemon4,pokemon5,pokemon6,pokemon7,pokemon8,pokemon9,pokemon10,pokemon11])
+      
+        pokemons.append(contentsOf: [pokemon1,pokemon2,pokemon3,pokemon4,pokemon5,pokemon6,pokemon7,pokemon8,pokemon9,pokemon10,pokemon11])
+      
+        pokemons.append(contentsOf: [pokemon1,pokemon2,pokemon3,pokemon4,pokemon5,pokemon6,pokemon7,pokemon8,pokemon9,pokemon10,pokemon11])
+        
+        
     }
     
     return pokemons
