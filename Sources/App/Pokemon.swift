@@ -54,8 +54,10 @@ extension Pokemon {
     
     init?(content :Content) {
        
-        guard let name = content["name"]?.string!,
-        let imageURL = content["imageURL"]?.string!
+        guard let name = content["name"]!.string,
+        let imageURL = content["imageURL"]!.string,
+        let latitude = content["latitude"]!.double,
+        let longitude = content["longitude"]!.double
         
         else {
             return nil
@@ -63,6 +65,8 @@ extension Pokemon {
         
         self.name = name
         self.imageURL = imageURL
+        self.latitude = latitude
+        self.longitude = longitude
     }
     
 }

@@ -90,9 +90,9 @@ drop.post("pokemon") { request in
     }
     
     pokemon.id = pokemons.count + 1
-    
     pokemons.append(pokemon)
-    return pokemon
+    
+    return try! JSON(node :pokemon)
     
    }
 
@@ -110,7 +110,8 @@ drop.get("pokemon",Int.self) { request, pokemonId in
         $0.id == pokemonId
     })!
     
-    return pokemon
+    return try! JSON(node: pokemon)
+
 }
 
 
