@@ -82,7 +82,7 @@ private func getAll() -> [Pokemon] {
 
 
 drop.post("pokemon") { request in
-    
+          
     pokemons = getAll()
     
     guard var pokemon = Pokemon(content: request.data) else {
